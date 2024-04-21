@@ -1,0 +1,2135 @@
+warning: Patch `redis v0.23.1 (https://github.com/revoltchat/redis-rs?rev=f8ca28ab85da59d2ccde526b4d2fb390eff5a5f9#f8ca28ab)` was not used in the crate graph.
+Check that the patched package version and available features are compatible
+with the dependency requirements. If the patch has a different version from
+what is locked in the Cargo.lock file, run `cargo update` to use the new
+version. This may also occur with an optional dependency that is not enabled.
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/channels.rs:284:5
+    |
+284 |     /// Options when deleting a channel
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(renamed_and_removed_lints)]` on by default
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/messages.rs:246:5
+    |
+246 |     /// Options for querying messages
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/messages.rs:323:5
+    |
+323 |     /// Options for removing reaction
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/core/models/src/v0/server_members.rs:99:5
+   |
+99 |     /// Options for fetching all members
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/servers.rs:197:5
+    |
+197 |     /// Options when fetching server
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/servers.rs:283:5
+    |
+283 |     /// Options when leaving a server
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/core/models/src/v0/user_settings.rs:18:5
+   |
+18 |     /// Additional options for inserting settings
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `revolt-models` (lib) generated 7 warnings
+warning: unused import: `self::rocket::*`
+ --> crates/core/database/src/models/users/mod.rs:9:9
+  |
+9 | pub use self::rocket::*;
+  |         ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `self::schema::*`
+  --> crates/core/database/src/models/users/mod.rs:11:9
+   |
+11 | pub use self::schema::*;
+   |         ^^^^^^^^^^^^^^^
+
+warning: `revolt-database` (lib) generated 2 warnings (run `cargo fix --lib -p revolt-database` to apply 2 suggestions)
+warning: unused import: `config`
+ --> crates/delta/src/routes/mod.rs:1:21
+  |
+1 | use revolt_config::{config, Settings};
+  |                     ^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `create_bot`
+  --> crates/delta/src/routes/bots/create.rs:13:14
+   |
+13 | pub async fn create_bot(
+   |              ^^^^^^^^^^
+
+warning: unused import: `delete_bot`
+  --> crates/delta/src/routes/bots/delete.rs:11:14
+   |
+11 | pub async fn delete_bot(
+   |              ^^^^^^^^^^
+
+warning: unused import: `edit_bot`
+  --> crates/delta/src/routes/bots/edit.rs:14:14
+   |
+14 | pub async fn edit_bot(
+   |              ^^^^^^^^
+
+warning: unused import: `fetch_bot`
+  --> crates/delta/src/routes/bots/fetch.rs:11:14
+   |
+11 | pub async fn fetch_bot(
+   |              ^^^^^^^^^
+
+warning: unused import: `fetch_owned_bots`
+  --> crates/delta/src/routes/bots/fetch_owned.rs:13:14
+   |
+13 | pub async fn fetch_owned_bots(db: &State<Database>, user: User) -> Result<Json<OwnedBotsResp...
+   |              ^^^^^^^^^^^^^^^^
+
+warning: unused import: `fetch_public_bot`
+  --> crates/delta/src/routes/bots/fetch_public.rs:13:14
+   |
+13 | pub async fn fetch_public_bot(
+   |              ^^^^^^^^^^^^^^^^
+
+warning: unused import: `invite_bot`
+  --> crates/delta/src/routes/bots/invite.rs:19:14
+   |
+19 | pub async fn invite_bot(
+   |              ^^^^^^^^^^
+
+warning: unused import: `ack`
+  --> crates/delta/src/routes/channels/channel_ack.rs:15:14
+   |
+15 | pub async fn ack(
+   |              ^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/channels/channel_delete.rs:16:14
+   |
+16 | pub async fn delete(
+   |              ^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/channels/channel_edit.rs:16:14
+   |
+16 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/channels/channel_fetch.rs:16:14
+   |
+16 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `add_member`
+  --> crates/delta/src/routes/channels/group_add_member.rs:16:14
+   |
+16 | pub async fn add_member(
+   |              ^^^^^^^^^^
+
+warning: unused import: `create_group`
+  --> crates/delta/src/routes/channels/group_create.rs:14:14
+   |
+14 | pub async fn create_group(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `remove_member`
+  --> crates/delta/src/routes/channels/group_remove_member.rs:13:14
+   |
+13 | pub async fn remove_member(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `create_invite`
+  --> crates/delta/src/routes/channels/invite_create.rs:18:14
+   |
+18 | pub async fn create_invite(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `futures::future::join_all`
+ --> crates/delta/src/routes/channels/members_fetch.rs:1:5
+  |
+1 | use futures::future::join_all;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `fetch_members`
+  --> crates/delta/src/routes/channels/members_fetch.rs:18:14
+   |
+18 | pub async fn fetch_members(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `serde::Deserialize`
+  --> crates/delta/src/routes/channels/message_bulk_delete.rs:11:5
+   |
+11 | use serde::Deserialize;
+   |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `bulk_delete_messages`
+  --> crates/delta/src/routes/channels/message_bulk_delete.rs:23:14
+   |
+23 | pub async fn bulk_delete_messages(
+   |              ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `clear_reactions`
+  --> crates/delta/src/routes/channels/message_clear_reactions.rs:17:14
+   |
+17 | pub async fn clear_reactions(
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/channels/message_delete.rs:15:14
+   |
+15 | pub async fn delete(
+   |              ^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/channels/message_edit.rs:19:14
+   |
+19 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/channels/message_fetch.rs:15:14
+   |
+15 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `query`
+  --> crates/delta/src/routes/channels/message_query.rs:16:14
+   |
+16 | pub async fn query(
+   |              ^^^^^
+
+warning: unused import: `react_message`
+  --> crates/delta/src/routes/channels/message_react.rs:15:14
+   |
+15 | pub async fn react_message(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `search`
+  --> crates/delta/src/routes/channels/message_search.rs:16:14
+   |
+16 | pub async fn search(
+   |              ^^^^^^
+
+warning: unused import: `message_send`
+  --> crates/delta/src/routes/channels/message_send.rs:19:14
+   |
+19 | pub async fn message_send(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `unreact_message`
+  --> crates/delta/src/routes/channels/message_unreact.rs:18:14
+   |
+18 | pub async fn unreact_message(
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `Channel`
+ --> crates/delta/src/routes/channels/permissions_set.rs:3:5
+  |
+3 |     Channel, Database, User,
+  |     ^^^^^^^
+
+warning: unused import: `serde::Deserialize`
+ --> crates/delta/src/routes/channels/permissions_set.rs:9:5
+  |
+9 | use serde::Deserialize;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `set_role_permissions`
+  --> crates/delta/src/routes/channels/permissions_set.rs:18:14
+   |
+18 | pub async fn set_role_permissions(
+   |              ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `set_default_permissions`
+  --> crates/delta/src/routes/channels/permissions_set_default.rs:17:14
+   |
+17 | pub async fn set_default_permissions(
+   |              ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `call`
+  --> crates/delta/src/routes/channels/voice_join.rs:16:14
+   |
+16 | pub async fn call(
+   |              ^^^^
+
+warning: unused import: `create_webhook`
+  --> crates/delta/src/routes/channels/webhook_create.rs:19:14
+   |
+19 | pub async fn create_webhook(
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `fetch_webhooks`
+  --> crates/delta/src/routes/channels/webhook_fetch_all.rs:15:14
+   |
+15 | pub async fn fetch_webhooks(
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `create_emoji`
+  --> crates/delta/src/routes/customisation/emoji_create.rs:15:14
+   |
+15 | pub async fn create_emoji(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `delete_emoji`
+  --> crates/delta/src/routes/customisation/emoji_delete.rs:16:14
+   |
+16 | pub async fn delete_emoji(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `fetch_emoji`
+  --> crates/delta/src/routes/customisation/emoji_fetch.rs:12:14
+   |
+12 | pub async fn fetch_emoji(db: &State<Database>, emoji_id: Reference) -> Result<Json<v0::Emoji...
+   |              ^^^^^^^^^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/invites/invite_delete.rs:15:14
+   |
+15 | pub async fn delete(db: &State<Database>, user: User, target: Reference) -> Result<EmptyResp...
+   |              ^^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/invites/invite_fetch.rs:11:14
+   |
+11 | pub async fn fetch(db: &State<Database>, target: Reference) -> Result<Json<v0::InviteRespons...
+   |              ^^^^^
+
+warning: unused import: `join`
+  --> crates/delta/src/routes/invites/invite_join.rs:11:14
+   |
+11 | pub async fn join(
+   |              ^^^^
+
+warning: unused import: `complete`
+  --> crates/delta/src/routes/onboard/complete.rs:31:14
+   |
+31 | pub async fn complete(
+   |              ^^^^^^^^
+
+warning: unused import: `hello`
+  --> crates/delta/src/routes/onboard/hello.rs:19:14
+   |
+19 | pub async fn hello(_session: Session, user: Option<User>) -> Json<DataHello> {
+   |              ^^^^^
+
+warning: unused import: `subscribe`
+  --> crates/delta/src/routes/push/subscribe.rs:16:14
+   |
+16 | pub async fn subscribe(
+   |              ^^^^^^^^^
+
+warning: unused import: `unsubscribe`
+  --> crates/delta/src/routes/push/unsubscribe.rs:13:14
+   |
+13 | pub async fn unsubscribe(
+   |              ^^^^^^^^^^^
+
+warning: unused import: `root`
+  --> crates/delta/src/routes/root.rs:89:14
+   |
+89 | pub async fn root() -> Result<Json<RevoltConfig>> {
+   |              ^^^^
+
+warning: unused import: `report_content`
+  --> crates/delta/src/routes/safety/report_content.rs:26:14
+   |
+26 | pub async fn report_content(
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `calculate_channel_permissions`
+ --> crates/delta/src/routes/servers/ban_create.rs:8:5
+  |
+8 |     calculate_channel_permissions, calculate_server_permissions, ChannelPermission,
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Deserialize`, `Serialize`
+  --> crates/delta/src/routes/servers/ban_create.rs:12:13
+   |
+12 | use serde::{Deserialize, Serialize};
+   |             ^^^^^^^^^^^  ^^^^^^^^^
+
+warning: unused import: `ban`
+  --> crates/delta/src/routes/servers/ban_create.rs:20:14
+   |
+20 | pub async fn ban(
+   |              ^^^
+
+warning: unused import: `list`
+  --> crates/delta/src/routes/servers/ban_list.rs:17:14
+   |
+17 | pub async fn list(
+   |              ^^^^
+
+warning: unused import: `unban`
+  --> crates/delta/src/routes/servers/ban_remove.rs:15:14
+   |
+15 | pub async fn unban(
+   |              ^^^^^
+
+warning: unused import: `create_server_channel`
+  --> crates/delta/src/routes/servers/channel_create.rs:16:14
+   |
+16 | pub async fn create_server_channel(
+   |              ^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `list_emoji`
+  --> crates/delta/src/routes/servers/emoji_list.rs:15:14
+   |
+15 | pub async fn list_emoji(
+   |              ^^^^^^^^^^
+
+warning: unused import: `invites`
+  --> crates/delta/src/routes/servers/invites_fetch.rs:15:14
+   |
+15 | pub async fn invites(
+   |              ^^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/servers/member_edit.rs:19:14
+   |
+19 | pub async fn edit(
+   |              ^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/delta/src/routes/servers/member_experimental_query.rs:12:1
+   |
+12 | /// # Query Parameters
+   | ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(renamed_and_removed_lints)]` on by default
+
+warning: unused import: `member_experimental_query`
+  --> crates/delta/src/routes/servers/member_experimental_query.rs:36:14
+   |
+36 | pub async fn member_experimental_query(
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/servers/member_fetch.rs:15:14
+   |
+15 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `fetch_all`
+  --> crates/delta/src/routes/servers/member_fetch_all.rs:15:14
+   |
+15 | pub async fn fetch_all(
+   |              ^^^^^^^^^
+
+warning: unused import: `kick`
+  --> crates/delta/src/routes/servers/member_remove.rs:15:14
+   |
+15 | pub async fn kick(
+   |              ^^^^
+
+warning: unused import: `set_role_permission`
+  --> crates/delta/src/routes/servers/permissions_set.rs:15:14
+   |
+15 | pub async fn set_role_permission(
+   |              ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `Server`
+ --> crates/delta/src/routes/servers/permissions_set_default.rs:3:30
+  |
+3 |     Database, PartialServer, Server, User,
+  |                              ^^^^^^
+
+warning: unused import: `set_default_permissions`
+  --> crates/delta/src/routes/servers/permissions_set_default.rs:17:14
+   |
+17 | pub async fn set_default_permissions(
+   |              ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `create`
+  --> crates/delta/src/routes/servers/roles_create.rs:17:14
+   |
+17 | pub async fn create(
+   |              ^^^^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/servers/roles_delete.rs:15:14
+   |
+15 | pub async fn delete(
+   |              ^^^^^^
+
+warning: unused imports: `Deserialize`, `Serialize`
+ --> crates/delta/src/routes/servers/roles_edit.rs:9:13
+  |
+9 | use serde::{Deserialize, Serialize};
+  |             ^^^^^^^^^^^  ^^^^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/servers/roles_edit.rs:17:14
+   |
+17 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/servers/roles_fetch.rs:11:14
+   |
+11 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `ack`
+  --> crates/delta/src/routes/servers/server_ack.rs:15:14
+   |
+15 | pub async fn ack(db: &State<Database>, user: User, target: Reference) -> Result<EmptyRespons...
+   |              ^^^
+
+warning: unused import: `create_server`
+  --> crates/delta/src/routes/servers/server_create.rs:14:14
+   |
+14 | pub async fn create_server(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/servers/server_delete.rs:13:14
+   |
+13 | pub async fn delete(
+   |              ^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/servers/server_edit.rs:18:14
+   |
+18 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/servers/server_fetch.rs:15:14
+   |
+15 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/sync/get_settings.rs:14:14
+   |
+14 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `unreads`
+  --> crates/delta/src/routes/sync/get_unreads.rs:12:14
+   |
+12 | pub async fn unreads(db: &State<Database>, user: User) -> Result<Json<Vec<v0::ChannelUnread>...
+   |              ^^^^^^^
+
+warning: unused import: `set`
+  --> crates/delta/src/routes/sync/set_settings.rs:17:14
+   |
+17 | pub async fn set(
+   |              ^^^
+
+warning: unused import: `add`
+  --> crates/delta/src/routes/users/add_friend.rs:13:14
+   |
+13 | pub async fn add(
+   |              ^^^
+
+warning: unused import: `block`
+  --> crates/delta/src/routes/users/block_user.rs:13:14
+   |
+13 | pub async fn block(
+   |              ^^^^^
+
+warning: unused import: `change_username`
+  --> crates/delta/src/routes/users/change_username.rs:33:14
+   |
+33 | pub async fn change_username(
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/users/edit_user.rs:14:14
+   |
+14 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `direct_messages`
+  --> crates/delta/src/routes/users/fetch_dms.rs:11:14
+   |
+11 | pub async fn direct_messages(db: &State<Database>, user: User) -> Result<Json<Vec<v0::Channe...
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `profile`
+  --> crates/delta/src/routes/users/fetch_profile.rs:17:14
+   |
+17 | pub async fn profile(
+   |              ^^^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/users/fetch_self.rs:11:14
+   |
+11 | pub async fn fetch(user: User) -> Result<Json<v0::User>> {
+   |              ^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/users/fetch_user.rs:16:14
+   |
+16 | pub async fn fetch(db: &State<Database>, user: User, target: Reference) -> Result<Json<v0::U...
+   |              ^^^^^
+
+warning: unused import: `serde::Serialize`
+ --> crates/delta/src/routes/users/fetch_user_flags.rs:5:5
+  |
+5 | use serde::Serialize;
+  |     ^^^^^^^^^^^^^^^^
+
+warning: unused import: `fetch_user_flags`
+  --> crates/delta/src/routes/users/fetch_user_flags.rs:12:14
+   |
+12 | pub async fn fetch_user_flags(
+   |              ^^^^^^^^^^^^^^^^
+
+warning: unused import: `mutual`
+  --> crates/delta/src/routes/users/find_mutual.rs:16:14
+   |
+16 | pub async fn mutual(
+   |              ^^^^^^
+
+warning: unused import: `default_avatar`
+  --> crates/delta/src/routes/users/get_default_avatar.rs:59:14
+   |
+59 | pub async fn default_avatar(target: String) -> CachedFile {
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `open_dm`
+  --> crates/delta/src/routes/users/open_dm.rs:17:14
+   |
+17 | pub async fn open_dm(
+   |              ^^^^^^^
+
+warning: unused import: `remove`
+  --> crates/delta/src/routes/users/remove_friend.rs:13:14
+   |
+13 | pub async fn remove(
+   |              ^^^^^^
+
+warning: unused import: `revolt_database::util::reference::Reference`
+ --> crates/delta/src/routes/users/send_friend_request.rs:1:5
+  |
+1 | use revolt_database::util::reference::Reference;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `send_friend_request`
+  --> crates/delta/src/routes/users/send_friend_request.rs:13:14
+   |
+13 | pub async fn send_friend_request(
+   |              ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `unblock`
+  --> crates/delta/src/routes/users/unblock_user.rs:13:14
+   |
+13 | pub async fn unblock(
+   |              ^^^^^^^
+
+warning: unused import: `webhook_delete`
+  --> crates/delta/src/routes/webhooks/webhook_delete.rs:15:14
+   |
+15 | pub async fn webhook_delete(
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_delete_token`
+  --> crates/delta/src/routes/webhooks/webhook_delete_token.rs:11:14
+   |
+11 | pub async fn webhook_delete_token(
+   |              ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_edit`
+  --> crates/delta/src/routes/webhooks/webhook_edit.rs:16:14
+   |
+16 | pub async fn webhook_edit(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `webhook_edit_token`
+  --> crates/delta/src/routes/webhooks/webhook_edit_token.rs:13:14
+   |
+13 | pub async fn webhook_edit_token(
+   |              ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_execute`
+  --> crates/delta/src/routes/webhooks/webhook_execute.rs:17:14
+   |
+17 | pub async fn webhook_execute(
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_fetch_token`
+  --> crates/delta/src/routes/webhooks/webhook_fetch_token.rs:11:14
+   |
+11 | pub async fn webhook_fetch_token(
+   |              ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_fetch`
+  --> crates/delta/src/routes/webhooks/webhook_fetch.rs:15:14
+   |
+15 | pub async fn webhook_fetch(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `webhook_execute_github`
+   --> crates/delta/src/routes/webhooks/webhook_execute_github.rs:748:14
+    |
+748 | pub async fn webhook_execute_github(
+    |              ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `revolt-delta` (bin "revolt-delta") generated 103 warnings (run `cargo fix --bin "revolt-delta"` to apply 102 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.15s
+     Running `target/debug/revolt-delta`
+ INFO  revolt_config > Starting revolt-delta@0.7.1
+ INFO  revolt_database::models::admin_migrations::ops::mongodb > Migrating the database.
+ INFO  revolt_database::models::admin_migrations::ops::mongodb::scripts > Starting database migration.
+ INFO  revolt_database::models::admin_migrations::ops::mongodb::scripts > Migration complete. Currently at revision 26.
+ INFO  rocket::launch                                                   > 🔧 Configured for debug.
+ INFO  rocket::launch_                                                  > address: [1;49;39m0.0.0.0[0m
+ INFO  rocket::launch_                                                  > port: [1;49;39m8000[0m
+ INFO  rocket::launch_                                                  > workers: [1;49;39m8[0m
+ INFO  rocket::launch_                                                  > ident: [1;49;39mRocket[0m
+ INFO  rocket::launch_                                                  > limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 5MB[0m
+ INFO  rocket::launch_                                                  > temp dir: [1;49;39m/tmp[0m
+ INFO  rocket::launch_                                                  > http/2: [1;49;39mtrue[0m
+ INFO  rocket::launch_                                                  > keep-alive: [1;49;39m5[0m[1;49;39ms[0m
+ INFO  rocket::launch_                                                  > tls: [1;49;39mdisabled[0m
+ INFO  rocket::launch_                                                  > shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m
+ INFO  rocket::launch_                                                  > log level: [1;49;39mnormal[0m
+ INFO  rocket::launch_                                                  > cli colors: [1;49;39mtrue[0m
+ INFO  rocket::launch                                                   > 📬 [35mRoutes[0m:
+ INFO  rocket::launch_                                                  > [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mratelimit_info[0m[36m)[0m [32mGET[0m [34m/ratelimit[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [34m/openapi.json[0m
+ INFO  rocket::launch_                                                  > [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_owned_bots[0m[36m)[0m [32mGET[0m [4;34m/bots[0m[34m/@me[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_bot[0m[36m)[0m [32mGET[0m [4;34m/bots[0m[34m/<bot>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_bot[0m[36m)[0m [32mPOST[0m [4;34m/bots[0m[34m/create[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munreads[0m[36m)[0m [32mGET[0m [4;34m/sync[0m[34m/unreads[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit_bot[0m[36m)[0m [32mPATCH[0m [4;34m/bots[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete_bot[0m[36m)[0m [32mDELETE[0m [4;34m/bots[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/cors[0m[34m/<status>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37msubscribe[0m[36m)[0m [32mPOST[0m [4;34m/push[0m[34m/subscribe[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munsubscribe[0m[36m)[0m [32mPOST[0m [4;34m/push[0m[34m/unsubscribe[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset[0m[36m)[0m [32mPOST[0m [4;34m/sync[0m[34m/settings/set?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mPOST[0m [4;34m/sync[0m[34m/settings/fetch[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37minvite_bot[0m[36m)[0m [32mPOST[0m [4;34m/bots[0m[34m/<target>/invite[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_public_bot[0m[36m)[0m [32mGET[0m [4;34m/bots[0m[34m/<target>/invite[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/@me[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdirect_messages[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/dms[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37msend_friend_request[0m[36m)[0m [32mPOST[0m [4;34m/users[0m[34m/friend[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/users[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mopen_dm[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/dm[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mchange_username[0m[36m)[0m [32mPATCH[0m [4;34m/users[0m[34m/@me/username[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_user_flags[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/flags[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mblock[0m[36m)[0m [32mPUT[0m [4;34m/users[0m[34m/<target>/block[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munblock[0m[36m)[0m [32mDELETE[0m [4;34m/users[0m[34m/<target>/block[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mmutual[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/mutual[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37madd[0m[36m)[0m [32mPUT[0m [4;34m/users[0m[34m/<target>/friend[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mremove[0m[36m)[0m [32mDELETE[0m [4;34m/users[0m[34m/<target>/friend[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mprofile[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/profile[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdefault_avatar[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/default_avatar[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mreport_content[0m[36m)[0m [32mPOST[0m [4;34m/safety[0m[34m/report[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_emoji[0m[36m)[0m [32mPUT[0m [4;34m/custom[0m[34m/emoji/<id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete_emoji[0m[36m)[0m [32mDELETE[0m [4;34m/custom[0m[34m/emoji/<emoji_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_emoji[0m[36m)[0m [32mGET[0m [4;34m/custom[0m[34m/emoji/<emoji_id>[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/metrics[0m[34m/[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mhello[0m[36m)[0m [32mGET[0m [4;34m/onboard[0m[34m/hello[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_server[0m[36m)[0m [32mPOST[0m [4;34m/servers[0m[34m/create[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/servers[0m[34m/<target>?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/servers[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/invites[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mjoin[0m[36m)[0m [32mPOST[0m [4;34m/invites[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/invites[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcomplete[0m[36m)[0m [32mPOST[0m [4;34m/onboard[0m[34m/complete[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/index.html[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/swagger-ui.css[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/oauth2-redirect.html[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/swagger-ui-bundle.js[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/swagger-ui-config.json[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/swagger-ui-standalone-preset.js[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mack[0m[36m)[0m [32mPUT[0m [4;34m/servers[0m[34m/<target>/ack[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mlist[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/bans[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate[0m[36m)[0m [32mPOST[0m [4;34m/servers[0m[34m/<target>/roles[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mlist_emoji[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/emojis[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_all[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/members?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37minvites[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/invites[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_server_channel[0m[36m)[0m [32mPOST[0m [4;34m/servers[0m[34m/<server>/channels[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mmember_experimental_query[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/members_experimental_query?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mban[0m[36m)[0m [32mPUT[0m [4;34m/servers[0m[34m/<server>/bans/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munban[0m[36m)[0m [32mDELETE[0m [4;34m/servers[0m[34m/<server>/bans/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/servers[0m[34m/<target>/roles/<role_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/roles/<role_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/servers[0m[34m/<target>/roles/<role_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mkick[0m[36m)[0m [32mDELETE[0m [4;34m/servers[0m[34m/<target>/members/<member>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/members/<member>?<roles>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/servers[0m[34m/<server>/members/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset_default_permissions[0m[36m)[0m [32mPUT[0m [4;34m/servers[0m[34m/<target>/permissions/default[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset_role_permission[0m[36m)[0m [32mPUT[0m [4;34m/servers[0m[34m/<target>/permissions/<role_id>[0m [[1;49;39m2[0m]
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_group[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/create[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/channels[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37msearch[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/search[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_members[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<target>/members[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_invite[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/invites[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mmessage_send[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/messages[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mquery[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<target>/messages?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_webhook[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/webhooks[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcall[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/join_call[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_webhooks[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<channel_id>/webhooks[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mack[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<target>/ack/<message>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mbulk_delete_messages[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/messages/bulk[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<target>/messages/<msg>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/channels[0m[34m/<target>/messages/<msg>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/messages/<msg>[0m [[1;49;39m2[0m]
+ INFO  rocket::launch_                                                  > [36m([0m[37mremove_member[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/recipients/<member>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset_default_permissions[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<target>/permissions/default[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset_role_permissions[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<target>/permissions/<role_id>[0m [[1;49;39m2[0m]
+ INFO  rocket::launch_                                                  > [36m([0m[37madd_member[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<group_id>/recipients/<member_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mclear_reactions[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/messages/<msg>/reactions[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mreact_message[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<target>/messages/<msg>/reactions/<emoji>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munreact_message[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/messages/<msg>/reactions/<emoji>?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_status[0m[36m)[0m [32mGET[0m [4;34m/auth/mfa[0m[34m/[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mtotp_disable[0m[36m)[0m [32mDELETE[0m [4;34m/auth/mfa[0m[34m/totp[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mtotp_enable[0m[36m)[0m [32mPUT[0m [4;34m/auth/mfa[0m[34m/totp[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mtotp_generate_secret[0m[36m)[0m [32mPOST[0m [4;34m/auth/mfa[0m[34m/totp[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_ticket[0m[36m)[0m [32mPUT[0m [4;34m/auth/mfa[0m[34m/ticket[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mget_mfa_methods[0m[36m)[0m [32mGET[0m [4;34m/auth/mfa[0m[34m/methods[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_recovery[0m[36m)[0m [32mPOST[0m [4;34m/auth/mfa[0m[34m/recovery[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mgenerate_recovery[0m[36m)[0m [32mPATCH[0m [4;34m/auth/mfa[0m[34m/recovery[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_account[0m[36m)[0m [32mGET[0m [4;34m/auth/account[0m[34m/[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_all[0m[36m)[0m [32mGET[0m [4;34m/auth/session[0m[34m/all[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mrevoke_all[0m[36m)[0m [32mDELETE[0m [4;34m/auth/session[0m[34m/all?<revoke_self>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mrevoke[0m[36m)[0m [32mDELETE[0m [4;34m/auth/session[0m[34m/<id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/auth/session[0m[34m/<id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mlogin[0m[36m)[0m [32mPOST[0m [4;34m/auth/session[0m[34m/login[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_account[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/create[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mconfirm_deletion[0m[36m)[0m [32mPUT[0m [4;34m/auth/account[0m[34m/delete[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete_account[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/delete[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/auth/session[0m[34m/logout[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdisable_account[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/disable[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mresend_verification[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/reverify[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mpassword_reset[0m[36m)[0m [32mPATCH[0m [4;34m/auth/account[0m[34m/reset_password[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37msend_password_reset[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/reset_password[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mchange_email[0m[36m)[0m [32mPATCH[0m [4;34m/auth/account[0m[34m/change/email[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mverify_email[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/verify/<code>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mchange_password[0m[36m)[0m [32mPATCH[0m [4;34m/auth/account[0m[34m/change/password[0m
+ INFO  rocket::launch                                                   > 📡 [35mFairings[0m:
+ INFO  rocket::launch_                                                  > [1;49;39mCORS[0m ([1;34mignite, request, response[0m)
+ INFO  rocket::launch_                                                  > [1;49;39mPrometheus metric collection[0m ([1;34mrequest, response[0m)
+ INFO  rocket::launch_                                                  > [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)
+ INFO  rocket::launch_                                                  > [1;49;39mRatelimiter[0m ([1;34mrequest, response[0m)
+ INFO  rocket::shield::shield                                           > 🛡️ [35mShield[0m:
+ INFO  _                                                                > Permissions-Policy: [49;39minterest-cohort=()[0m
+ INFO  _                                                                > X-Frame-Options: [49;39mSAMEORIGIN[0m
+ INFO  _                                                                > X-Content-Type-Options: [49;39mnosniff[0m
+ INFO  rocket::launch                                                   > 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://0.0.0.0:8000[0m
+warning: Patch `redis v0.23.1 (https://github.com/revoltchat/redis-rs?rev=f8ca28ab85da59d2ccde526b4d2fb390eff5a5f9#f8ca28ab)` was not used in the crate graph.
+Check that the patched package version and available features are compatible
+with the dependency requirements. If the patch has a different version from
+what is locked in the Cargo.lock file, run `cargo update` to use the new
+version. This may also occur with an optional dependency that is not enabled.
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/channels.rs:284:5
+    |
+284 |     /// Options when deleting a channel
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(renamed_and_removed_lints)]` on by default
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/messages.rs:246:5
+    |
+246 |     /// Options for querying messages
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/messages.rs:323:5
+    |
+323 |     /// Options for removing reaction
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/core/models/src/v0/server_members.rs:99:5
+   |
+99 |     /// Options for fetching all members
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/servers.rs:197:5
+    |
+197 |     /// Options when fetching server
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/servers.rs:283:5
+    |
+283 |     /// Options when leaving a server
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/core/models/src/v0/user_settings.rs:18:5
+   |
+18 |     /// Additional options for inserting settings
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `revolt-models` (lib) generated 7 warnings
+warning: unused import: `self::rocket::*`
+ --> crates/core/database/src/models/users/mod.rs:9:9
+  |
+9 | pub use self::rocket::*;
+  |         ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `self::schema::*`
+  --> crates/core/database/src/models/users/mod.rs:11:9
+   |
+11 | pub use self::schema::*;
+   |         ^^^^^^^^^^^^^^^
+
+warning: `revolt-database` (lib) generated 2 warnings (run `cargo fix --lib -p revolt-database` to apply 2 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.14s
+     Running `target/debug/revolt-bonfire`
+ INFO  revolt_config > Starting revolt-bonfire@0.7.1
+ INFO  revolt_bonfire > Listening on host 0.0.0.0:9000
+ WARN  rocket::server                                                   > Received SIGTERM. Requesting shutdown.
+ INFO  rocket::server                                                   > Shutdown requested. Waiting for pending I/O...
+ INFO  rocket::server                                                   > Graceful shutdown completed successfully.
+warning: Patch `redis v0.23.1 (https://github.com/revoltchat/redis-rs?rev=f8ca28ab85da59d2ccde526b4d2fb390eff5a5f9#f8ca28ab)` was not used in the crate graph.
+Check that the patched package version and available features are compatible
+with the dependency requirements. If the patch has a different version from
+what is locked in the Cargo.lock file, run `cargo update` to use the new
+version. This may also occur with an optional dependency that is not enabled.
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/channels.rs:284:5
+    |
+284 |     /// Options when deleting a channel
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(renamed_and_removed_lints)]` on by default
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/messages.rs:246:5
+    |
+246 |     /// Options for querying messages
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/messages.rs:323:5
+    |
+323 |     /// Options for removing reaction
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/core/models/src/v0/server_members.rs:99:5
+   |
+99 |     /// Options for fetching all members
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/servers.rs:197:5
+    |
+197 |     /// Options when fetching server
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/servers.rs:283:5
+    |
+283 |     /// Options when leaving a server
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/core/models/src/v0/user_settings.rs:18:5
+   |
+18 |     /// Additional options for inserting settings
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `revolt-models` (lib) generated 7 warnings
+warning: unused import: `self::rocket::*`
+ --> crates/core/database/src/models/users/mod.rs:9:9
+  |
+9 | pub use self::rocket::*;
+  |         ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `self::schema::*`
+  --> crates/core/database/src/models/users/mod.rs:11:9
+   |
+11 | pub use self::schema::*;
+   |         ^^^^^^^^^^^^^^^
+
+warning: `revolt-database` (lib) generated 2 warnings (run `cargo fix --lib -p revolt-database` to apply 2 suggestions)
+warning: unused import: `config`
+ --> crates/delta/src/routes/mod.rs:1:21
+  |
+1 | use revolt_config::{config, Settings};
+  |                     ^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `create_bot`
+  --> crates/delta/src/routes/bots/create.rs:13:14
+   |
+13 | pub async fn create_bot(
+   |              ^^^^^^^^^^
+
+warning: unused import: `delete_bot`
+  --> crates/delta/src/routes/bots/delete.rs:11:14
+   |
+11 | pub async fn delete_bot(
+   |              ^^^^^^^^^^
+
+warning: unused import: `edit_bot`
+  --> crates/delta/src/routes/bots/edit.rs:14:14
+   |
+14 | pub async fn edit_bot(
+   |              ^^^^^^^^
+
+warning: unused import: `fetch_bot`
+  --> crates/delta/src/routes/bots/fetch.rs:11:14
+   |
+11 | pub async fn fetch_bot(
+   |              ^^^^^^^^^
+
+warning: unused import: `fetch_owned_bots`
+  --> crates/delta/src/routes/bots/fetch_owned.rs:13:14
+   |
+13 | pub async fn fetch_owned_bots(db: &State<Database>, user: User) -> Result<Json<OwnedBotsResp...
+   |              ^^^^^^^^^^^^^^^^
+
+warning: unused import: `fetch_public_bot`
+  --> crates/delta/src/routes/bots/fetch_public.rs:13:14
+   |
+13 | pub async fn fetch_public_bot(
+   |              ^^^^^^^^^^^^^^^^
+
+warning: unused import: `invite_bot`
+  --> crates/delta/src/routes/bots/invite.rs:19:14
+   |
+19 | pub async fn invite_bot(
+   |              ^^^^^^^^^^
+
+warning: unused import: `ack`
+  --> crates/delta/src/routes/channels/channel_ack.rs:15:14
+   |
+15 | pub async fn ack(
+   |              ^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/channels/channel_delete.rs:16:14
+   |
+16 | pub async fn delete(
+   |              ^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/channels/channel_edit.rs:16:14
+   |
+16 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/channels/channel_fetch.rs:16:14
+   |
+16 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `add_member`
+  --> crates/delta/src/routes/channels/group_add_member.rs:16:14
+   |
+16 | pub async fn add_member(
+   |              ^^^^^^^^^^
+
+warning: unused import: `create_group`
+  --> crates/delta/src/routes/channels/group_create.rs:14:14
+   |
+14 | pub async fn create_group(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `remove_member`
+  --> crates/delta/src/routes/channels/group_remove_member.rs:13:14
+   |
+13 | pub async fn remove_member(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `create_invite`
+  --> crates/delta/src/routes/channels/invite_create.rs:18:14
+   |
+18 | pub async fn create_invite(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `futures::future::join_all`
+ --> crates/delta/src/routes/channels/members_fetch.rs:1:5
+  |
+1 | use futures::future::join_all;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `fetch_members`
+  --> crates/delta/src/routes/channels/members_fetch.rs:18:14
+   |
+18 | pub async fn fetch_members(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `serde::Deserialize`
+  --> crates/delta/src/routes/channels/message_bulk_delete.rs:11:5
+   |
+11 | use serde::Deserialize;
+   |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `bulk_delete_messages`
+  --> crates/delta/src/routes/channels/message_bulk_delete.rs:23:14
+   |
+23 | pub async fn bulk_delete_messages(
+   |              ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `clear_reactions`
+  --> crates/delta/src/routes/channels/message_clear_reactions.rs:17:14
+   |
+17 | pub async fn clear_reactions(
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/channels/message_delete.rs:15:14
+   |
+15 | pub async fn delete(
+   |              ^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/channels/message_edit.rs:19:14
+   |
+19 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/channels/message_fetch.rs:15:14
+   |
+15 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `query`
+  --> crates/delta/src/routes/channels/message_query.rs:16:14
+   |
+16 | pub async fn query(
+   |              ^^^^^
+
+warning: unused import: `react_message`
+  --> crates/delta/src/routes/channels/message_react.rs:15:14
+   |
+15 | pub async fn react_message(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `search`
+  --> crates/delta/src/routes/channels/message_search.rs:16:14
+   |
+16 | pub async fn search(
+   |              ^^^^^^
+
+warning: unused import: `message_send`
+  --> crates/delta/src/routes/channels/message_send.rs:19:14
+   |
+19 | pub async fn message_send(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `unreact_message`
+  --> crates/delta/src/routes/channels/message_unreact.rs:18:14
+   |
+18 | pub async fn unreact_message(
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `Channel`
+ --> crates/delta/src/routes/channels/permissions_set.rs:3:5
+  |
+3 |     Channel, Database, User,
+  |     ^^^^^^^
+
+warning: unused import: `serde::Deserialize`
+ --> crates/delta/src/routes/channels/permissions_set.rs:9:5
+  |
+9 | use serde::Deserialize;
+  |     ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `set_role_permissions`
+  --> crates/delta/src/routes/channels/permissions_set.rs:18:14
+   |
+18 | pub async fn set_role_permissions(
+   |              ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `set_default_permissions`
+  --> crates/delta/src/routes/channels/permissions_set_default.rs:17:14
+   |
+17 | pub async fn set_default_permissions(
+   |              ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `call`
+  --> crates/delta/src/routes/channels/voice_join.rs:16:14
+   |
+16 | pub async fn call(
+   |              ^^^^
+
+warning: unused import: `create_webhook`
+  --> crates/delta/src/routes/channels/webhook_create.rs:19:14
+   |
+19 | pub async fn create_webhook(
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `fetch_webhooks`
+  --> crates/delta/src/routes/channels/webhook_fetch_all.rs:15:14
+   |
+15 | pub async fn fetch_webhooks(
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `create_emoji`
+  --> crates/delta/src/routes/customisation/emoji_create.rs:15:14
+   |
+15 | pub async fn create_emoji(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `delete_emoji`
+  --> crates/delta/src/routes/customisation/emoji_delete.rs:16:14
+   |
+16 | pub async fn delete_emoji(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `fetch_emoji`
+  --> crates/delta/src/routes/customisation/emoji_fetch.rs:12:14
+   |
+12 | pub async fn fetch_emoji(db: &State<Database>, emoji_id: Reference) -> Result<Json<v0::Emoji...
+   |              ^^^^^^^^^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/invites/invite_delete.rs:15:14
+   |
+15 | pub async fn delete(db: &State<Database>, user: User, target: Reference) -> Result<EmptyResp...
+   |              ^^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/invites/invite_fetch.rs:11:14
+   |
+11 | pub async fn fetch(db: &State<Database>, target: Reference) -> Result<Json<v0::InviteRespons...
+   |              ^^^^^
+
+warning: unused import: `join`
+  --> crates/delta/src/routes/invites/invite_join.rs:11:14
+   |
+11 | pub async fn join(
+   |              ^^^^
+
+warning: unused import: `complete`
+  --> crates/delta/src/routes/onboard/complete.rs:31:14
+   |
+31 | pub async fn complete(
+   |              ^^^^^^^^
+
+warning: unused import: `hello`
+  --> crates/delta/src/routes/onboard/hello.rs:19:14
+   |
+19 | pub async fn hello(_session: Session, user: Option<User>) -> Json<DataHello> {
+   |              ^^^^^
+
+warning: unused import: `subscribe`
+  --> crates/delta/src/routes/push/subscribe.rs:16:14
+   |
+16 | pub async fn subscribe(
+   |              ^^^^^^^^^
+
+warning: unused import: `unsubscribe`
+  --> crates/delta/src/routes/push/unsubscribe.rs:13:14
+   |
+13 | pub async fn unsubscribe(
+   |              ^^^^^^^^^^^
+
+warning: unused import: `root`
+  --> crates/delta/src/routes/root.rs:89:14
+   |
+89 | pub async fn root() -> Result<Json<RevoltConfig>> {
+   |              ^^^^
+
+warning: unused import: `report_content`
+  --> crates/delta/src/routes/safety/report_content.rs:26:14
+   |
+26 | pub async fn report_content(
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `calculate_channel_permissions`
+ --> crates/delta/src/routes/servers/ban_create.rs:8:5
+  |
+8 |     calculate_channel_permissions, calculate_server_permissions, ChannelPermission,
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `Deserialize`, `Serialize`
+  --> crates/delta/src/routes/servers/ban_create.rs:12:13
+   |
+12 | use serde::{Deserialize, Serialize};
+   |             ^^^^^^^^^^^  ^^^^^^^^^
+
+warning: unused import: `ban`
+  --> crates/delta/src/routes/servers/ban_create.rs:20:14
+   |
+20 | pub async fn ban(
+   |              ^^^
+
+warning: unused import: `list`
+  --> crates/delta/src/routes/servers/ban_list.rs:17:14
+   |
+17 | pub async fn list(
+   |              ^^^^
+
+warning: unused import: `unban`
+  --> crates/delta/src/routes/servers/ban_remove.rs:15:14
+   |
+15 | pub async fn unban(
+   |              ^^^^^
+
+warning: unused import: `create_server_channel`
+  --> crates/delta/src/routes/servers/channel_create.rs:16:14
+   |
+16 | pub async fn create_server_channel(
+   |              ^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `list_emoji`
+  --> crates/delta/src/routes/servers/emoji_list.rs:15:14
+   |
+15 | pub async fn list_emoji(
+   |              ^^^^^^^^^^
+
+warning: unused import: `invites`
+  --> crates/delta/src/routes/servers/invites_fetch.rs:15:14
+   |
+15 | pub async fn invites(
+   |              ^^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/servers/member_edit.rs:19:14
+   |
+19 | pub async fn edit(
+   |              ^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/delta/src/routes/servers/member_experimental_query.rs:12:1
+   |
+12 | /// # Query Parameters
+   | ^^^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(renamed_and_removed_lints)]` on by default
+
+warning: unused import: `member_experimental_query`
+  --> crates/delta/src/routes/servers/member_experimental_query.rs:36:14
+   |
+36 | pub async fn member_experimental_query(
+   |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/servers/member_fetch.rs:15:14
+   |
+15 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `fetch_all`
+  --> crates/delta/src/routes/servers/member_fetch_all.rs:15:14
+   |
+15 | pub async fn fetch_all(
+   |              ^^^^^^^^^
+
+warning: unused import: `kick`
+  --> crates/delta/src/routes/servers/member_remove.rs:15:14
+   |
+15 | pub async fn kick(
+   |              ^^^^
+
+warning: unused import: `set_role_permission`
+  --> crates/delta/src/routes/servers/permissions_set.rs:15:14
+   |
+15 | pub async fn set_role_permission(
+   |              ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `Server`
+ --> crates/delta/src/routes/servers/permissions_set_default.rs:3:30
+  |
+3 |     Database, PartialServer, Server, User,
+  |                              ^^^^^^
+
+warning: unused import: `set_default_permissions`
+  --> crates/delta/src/routes/servers/permissions_set_default.rs:17:14
+   |
+17 | pub async fn set_default_permissions(
+   |              ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `create`
+  --> crates/delta/src/routes/servers/roles_create.rs:17:14
+   |
+17 | pub async fn create(
+   |              ^^^^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/servers/roles_delete.rs:15:14
+   |
+15 | pub async fn delete(
+   |              ^^^^^^
+
+warning: unused imports: `Deserialize`, `Serialize`
+ --> crates/delta/src/routes/servers/roles_edit.rs:9:13
+  |
+9 | use serde::{Deserialize, Serialize};
+  |             ^^^^^^^^^^^  ^^^^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/servers/roles_edit.rs:17:14
+   |
+17 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/servers/roles_fetch.rs:11:14
+   |
+11 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `ack`
+  --> crates/delta/src/routes/servers/server_ack.rs:15:14
+   |
+15 | pub async fn ack(db: &State<Database>, user: User, target: Reference) -> Result<EmptyRespons...
+   |              ^^^
+
+warning: unused import: `create_server`
+  --> crates/delta/src/routes/servers/server_create.rs:14:14
+   |
+14 | pub async fn create_server(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `delete`
+  --> crates/delta/src/routes/servers/server_delete.rs:13:14
+   |
+13 | pub async fn delete(
+   |              ^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/servers/server_edit.rs:18:14
+   |
+18 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/servers/server_fetch.rs:15:14
+   |
+15 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/sync/get_settings.rs:14:14
+   |
+14 | pub async fn fetch(
+   |              ^^^^^
+
+warning: unused import: `unreads`
+  --> crates/delta/src/routes/sync/get_unreads.rs:12:14
+   |
+12 | pub async fn unreads(db: &State<Database>, user: User) -> Result<Json<Vec<v0::ChannelUnread>...
+   |              ^^^^^^^
+
+warning: unused import: `set`
+  --> crates/delta/src/routes/sync/set_settings.rs:17:14
+   |
+17 | pub async fn set(
+   |              ^^^
+
+warning: unused import: `add`
+  --> crates/delta/src/routes/users/add_friend.rs:13:14
+   |
+13 | pub async fn add(
+   |              ^^^
+
+warning: unused import: `block`
+  --> crates/delta/src/routes/users/block_user.rs:13:14
+   |
+13 | pub async fn block(
+   |              ^^^^^
+
+warning: unused import: `change_username`
+  --> crates/delta/src/routes/users/change_username.rs:33:14
+   |
+33 | pub async fn change_username(
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `edit`
+  --> crates/delta/src/routes/users/edit_user.rs:14:14
+   |
+14 | pub async fn edit(
+   |              ^^^^
+
+warning: unused import: `direct_messages`
+  --> crates/delta/src/routes/users/fetch_dms.rs:11:14
+   |
+11 | pub async fn direct_messages(db: &State<Database>, user: User) -> Result<Json<Vec<v0::Channe...
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `profile`
+  --> crates/delta/src/routes/users/fetch_profile.rs:17:14
+   |
+17 | pub async fn profile(
+   |              ^^^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/users/fetch_self.rs:11:14
+   |
+11 | pub async fn fetch(user: User) -> Result<Json<v0::User>> {
+   |              ^^^^^
+
+warning: unused import: `fetch`
+  --> crates/delta/src/routes/users/fetch_user.rs:16:14
+   |
+16 | pub async fn fetch(db: &State<Database>, user: User, target: Reference) -> Result<Json<v0::U...
+   |              ^^^^^
+
+warning: unused import: `serde::Serialize`
+ --> crates/delta/src/routes/users/fetch_user_flags.rs:5:5
+  |
+5 | use serde::Serialize;
+  |     ^^^^^^^^^^^^^^^^
+
+warning: unused import: `fetch_user_flags`
+  --> crates/delta/src/routes/users/fetch_user_flags.rs:12:14
+   |
+12 | pub async fn fetch_user_flags(
+   |              ^^^^^^^^^^^^^^^^
+
+warning: unused import: `mutual`
+  --> crates/delta/src/routes/users/find_mutual.rs:16:14
+   |
+16 | pub async fn mutual(
+   |              ^^^^^^
+
+warning: unused import: `default_avatar`
+  --> crates/delta/src/routes/users/get_default_avatar.rs:59:14
+   |
+59 | pub async fn default_avatar(target: String) -> CachedFile {
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `open_dm`
+  --> crates/delta/src/routes/users/open_dm.rs:17:14
+   |
+17 | pub async fn open_dm(
+   |              ^^^^^^^
+
+warning: unused import: `remove`
+  --> crates/delta/src/routes/users/remove_friend.rs:13:14
+   |
+13 | pub async fn remove(
+   |              ^^^^^^
+
+warning: unused import: `revolt_database::util::reference::Reference`
+ --> crates/delta/src/routes/users/send_friend_request.rs:1:5
+  |
+1 | use revolt_database::util::reference::Reference;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `send_friend_request`
+  --> crates/delta/src/routes/users/send_friend_request.rs:13:14
+   |
+13 | pub async fn send_friend_request(
+   |              ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `unblock`
+  --> crates/delta/src/routes/users/unblock_user.rs:13:14
+   |
+13 | pub async fn unblock(
+   |              ^^^^^^^
+
+warning: unused import: `webhook_delete`
+  --> crates/delta/src/routes/webhooks/webhook_delete.rs:15:14
+   |
+15 | pub async fn webhook_delete(
+   |              ^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_delete_token`
+  --> crates/delta/src/routes/webhooks/webhook_delete_token.rs:11:14
+   |
+11 | pub async fn webhook_delete_token(
+   |              ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_edit`
+  --> crates/delta/src/routes/webhooks/webhook_edit.rs:16:14
+   |
+16 | pub async fn webhook_edit(
+   |              ^^^^^^^^^^^^
+
+warning: unused import: `webhook_edit_token`
+  --> crates/delta/src/routes/webhooks/webhook_edit_token.rs:13:14
+   |
+13 | pub async fn webhook_edit_token(
+   |              ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_execute`
+  --> crates/delta/src/routes/webhooks/webhook_execute.rs:17:14
+   |
+17 | pub async fn webhook_execute(
+   |              ^^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_fetch_token`
+  --> crates/delta/src/routes/webhooks/webhook_fetch_token.rs:11:14
+   |
+11 | pub async fn webhook_fetch_token(
+   |              ^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `webhook_fetch`
+  --> crates/delta/src/routes/webhooks/webhook_fetch.rs:15:14
+   |
+15 | pub async fn webhook_fetch(
+   |              ^^^^^^^^^^^^^
+
+warning: unused import: `webhook_execute_github`
+   --> crates/delta/src/routes/webhooks/webhook_execute_github.rs:748:14
+    |
+748 | pub async fn webhook_execute_github(
+    |              ^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `revolt-delta` (bin "revolt-delta") generated 103 warnings (run `cargo fix --bin "revolt-delta"` to apply 102 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 1.83s
+     Running `target/debug/revolt-delta`
+ INFO  revolt_config > Starting revolt-delta@0.7.1
+ INFO  revolt_database::models::admin_migrations::ops::mongodb > Migrating the database.
+ INFO  revolt_database::models::admin_migrations::ops::mongodb::scripts > Starting database migration.
+ INFO  revolt_database::models::admin_migrations::ops::mongodb::scripts > Migration complete. Currently at revision 26.
+ INFO  rocket::launch                                                   > 🔧 Configured for debug.
+ INFO  rocket::launch_                                                  > address: [1;49;39m0.0.0.0[0m
+ INFO  rocket::launch_                                                  > port: [1;49;39m8000[0m
+ INFO  rocket::launch_                                                  > workers: [1;49;39m8[0m
+ INFO  rocket::launch_                                                  > ident: [1;49;39mRocket[0m
+ INFO  rocket::launch_                                                  > limits: [1;49;39mbytes = 8KiB, data-form = 2MiB, file = 1MiB, form = 32KiB, json = 1MiB, msgpack = 1MiB, string = 5MB[0m
+ INFO  rocket::launch_                                                  > temp dir: [1;49;39m/tmp[0m
+ INFO  rocket::launch_                                                  > http/2: [1;49;39mtrue[0m
+ INFO  rocket::launch_                                                  > keep-alive: [1;49;39m5[0m[1;49;39ms[0m
+ INFO  rocket::launch_                                                  > tls: [1;49;39mdisabled[0m
+ INFO  rocket::launch_                                                  > shutdown: [1;49;39mctrlc = true, force = true, signals = [SIGTERM], grace = 2s, mercy = 3s[0m
+ INFO  rocket::launch_                                                  > log level: [1;49;39mnormal[0m
+ INFO  rocket::launch_                                                  > cli colors: [1;49;39mtrue[0m
+ INFO  rocket::launch                                                   > 📬 [35mRoutes[0m:
+ INFO  rocket::launch_                                                  > [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mratelimit_info[0m[36m)[0m [32mGET[0m [34m/ratelimit[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [34m/openapi.json[0m
+ INFO  rocket::launch_                                                  > [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_owned_bots[0m[36m)[0m [32mGET[0m [4;34m/bots[0m[34m/@me[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_bot[0m[36m)[0m [32mGET[0m [4;34m/bots[0m[34m/<bot>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_bot[0m[36m)[0m [32mPOST[0m [4;34m/bots[0m[34m/create[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munreads[0m[36m)[0m [32mGET[0m [4;34m/sync[0m[34m/unreads[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit_bot[0m[36m)[0m [32mPATCH[0m [4;34m/bots[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete_bot[0m[36m)[0m [32mDELETE[0m [4;34m/bots[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/cors[0m[34m/<status>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37msubscribe[0m[36m)[0m [32mPOST[0m [4;34m/push[0m[34m/subscribe[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munsubscribe[0m[36m)[0m [32mPOST[0m [4;34m/push[0m[34m/unsubscribe[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset[0m[36m)[0m [32mPOST[0m [4;34m/sync[0m[34m/settings/set?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mPOST[0m [4;34m/sync[0m[34m/settings/fetch[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37minvite_bot[0m[36m)[0m [32mPOST[0m [4;34m/bots[0m[34m/<target>/invite[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_public_bot[0m[36m)[0m [32mGET[0m [4;34m/bots[0m[34m/<target>/invite[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/@me[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdirect_messages[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/dms[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37msend_friend_request[0m[36m)[0m [32mPOST[0m [4;34m/users[0m[34m/friend[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/users[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mopen_dm[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/dm[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mchange_username[0m[36m)[0m [32mPATCH[0m [4;34m/users[0m[34m/@me/username[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_user_flags[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/flags[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mblock[0m[36m)[0m [32mPUT[0m [4;34m/users[0m[34m/<target>/block[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munblock[0m[36m)[0m [32mDELETE[0m [4;34m/users[0m[34m/<target>/block[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mmutual[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/mutual[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37madd[0m[36m)[0m [32mPUT[0m [4;34m/users[0m[34m/<target>/friend[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mremove[0m[36m)[0m [32mDELETE[0m [4;34m/users[0m[34m/<target>/friend[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mprofile[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/profile[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdefault_avatar[0m[36m)[0m [32mGET[0m [4;34m/users[0m[34m/<target>/default_avatar[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mreport_content[0m[36m)[0m [32mPOST[0m [4;34m/safety[0m[34m/report[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_emoji[0m[36m)[0m [32mPUT[0m [4;34m/custom[0m[34m/emoji/<id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete_emoji[0m[36m)[0m [32mDELETE[0m [4;34m/custom[0m[34m/emoji/<emoji_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_emoji[0m[36m)[0m [32mGET[0m [4;34m/custom[0m[34m/emoji/<emoji_id>[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/metrics[0m[34m/[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mhello[0m[36m)[0m [32mGET[0m [4;34m/onboard[0m[34m/hello[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_server[0m[36m)[0m [32mPOST[0m [4;34m/servers[0m[34m/create[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/servers[0m[34m/<target>?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/servers[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/invites[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mjoin[0m[36m)[0m [32mPOST[0m [4;34m/invites[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/invites[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcomplete[0m[36m)[0m [32mPOST[0m [4;34m/onboard[0m[34m/complete[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/index.html[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/swagger-ui.css[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/oauth2-redirect.html[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/swagger-ui-bundle.js[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/swagger-ui-config.json[0m
+ INFO  rocket::launch_                                                  > [32mGET[0m [4;34m/swagger[0m[34m/swagger-ui-standalone-preset.js[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mack[0m[36m)[0m [32mPUT[0m [4;34m/servers[0m[34m/<target>/ack[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mlist[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/bans[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate[0m[36m)[0m [32mPOST[0m [4;34m/servers[0m[34m/<target>/roles[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mlist_emoji[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/emojis[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_all[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/members?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37minvites[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/invites[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_server_channel[0m[36m)[0m [32mPOST[0m [4;34m/servers[0m[34m/<server>/channels[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mmember_experimental_query[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/members_experimental_query?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mban[0m[36m)[0m [32mPUT[0m [4;34m/servers[0m[34m/<server>/bans/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munban[0m[36m)[0m [32mDELETE[0m [4;34m/servers[0m[34m/<server>/bans/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/servers[0m[34m/<target>/roles/<role_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/roles/<role_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/servers[0m[34m/<target>/roles/<role_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mkick[0m[36m)[0m [32mDELETE[0m [4;34m/servers[0m[34m/<target>/members/<member>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/servers[0m[34m/<target>/members/<member>?<roles>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/servers[0m[34m/<server>/members/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset_default_permissions[0m[36m)[0m [32mPUT[0m [4;34m/servers[0m[34m/<target>/permissions/default[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset_role_permission[0m[36m)[0m [32mPUT[0m [4;34m/servers[0m[34m/<target>/permissions/<role_id>[0m [[1;49;39m2[0m]
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_group[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/create[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/channels[0m[34m/<target>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37msearch[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/search[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_members[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<target>/members[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_invite[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/invites[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mmessage_send[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/messages[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mquery[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<target>/messages?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_webhook[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/webhooks[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcall[0m[36m)[0m [32mPOST[0m [4;34m/channels[0m[34m/<target>/join_call[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_webhooks[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<channel_id>/webhooks[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mack[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<target>/ack/<message>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mbulk_delete_messages[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/messages/bulk[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch[0m[36m)[0m [32mGET[0m [4;34m/channels[0m[34m/<target>/messages/<msg>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/channels[0m[34m/<target>/messages/<msg>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/messages/<msg>[0m [[1;49;39m2[0m]
+ INFO  rocket::launch_                                                  > [36m([0m[37mremove_member[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/recipients/<member>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset_default_permissions[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<target>/permissions/default[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mset_role_permissions[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<target>/permissions/<role_id>[0m [[1;49;39m2[0m]
+ INFO  rocket::launch_                                                  > [36m([0m[37madd_member[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<group_id>/recipients/<member_id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mclear_reactions[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/messages/<msg>/reactions[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mreact_message[0m[36m)[0m [32mPUT[0m [4;34m/channels[0m[34m/<target>/messages/<msg>/reactions/<emoji>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37munreact_message[0m[36m)[0m [32mDELETE[0m [4;34m/channels[0m[34m/<target>/messages/<msg>/reactions/<emoji>?<options..>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_status[0m[36m)[0m [32mGET[0m [4;34m/auth/mfa[0m[34m/[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mtotp_disable[0m[36m)[0m [32mDELETE[0m [4;34m/auth/mfa[0m[34m/totp[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mtotp_enable[0m[36m)[0m [32mPUT[0m [4;34m/auth/mfa[0m[34m/totp[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mtotp_generate_secret[0m[36m)[0m [32mPOST[0m [4;34m/auth/mfa[0m[34m/totp[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_ticket[0m[36m)[0m [32mPUT[0m [4;34m/auth/mfa[0m[34m/ticket[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mget_mfa_methods[0m[36m)[0m [32mGET[0m [4;34m/auth/mfa[0m[34m/methods[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_recovery[0m[36m)[0m [32mPOST[0m [4;34m/auth/mfa[0m[34m/recovery[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mgenerate_recovery[0m[36m)[0m [32mPATCH[0m [4;34m/auth/mfa[0m[34m/recovery[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_account[0m[36m)[0m [32mGET[0m [4;34m/auth/account[0m[34m/[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mfetch_all[0m[36m)[0m [32mGET[0m [4;34m/auth/session[0m[34m/all[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mrevoke_all[0m[36m)[0m [32mDELETE[0m [4;34m/auth/session[0m[34m/all?<revoke_self>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mrevoke[0m[36m)[0m [32mDELETE[0m [4;34m/auth/session[0m[34m/<id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37medit[0m[36m)[0m [32mPATCH[0m [4;34m/auth/session[0m[34m/<id>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mlogin[0m[36m)[0m [32mPOST[0m [4;34m/auth/session[0m[34m/login[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mcreate_account[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/create[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mconfirm_deletion[0m[36m)[0m [32mPUT[0m [4;34m/auth/account[0m[34m/delete[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdelete_account[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/delete[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/auth/session[0m[34m/logout[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mdisable_account[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/disable[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mresend_verification[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/reverify[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mpassword_reset[0m[36m)[0m [32mPATCH[0m [4;34m/auth/account[0m[34m/reset_password[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37msend_password_reset[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/reset_password[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mchange_email[0m[36m)[0m [32mPATCH[0m [4;34m/auth/account[0m[34m/change/email[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mverify_email[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/verify/<code>[0m
+ INFO  rocket::launch_                                                  > [36m([0m[37mchange_password[0m[36m)[0m [32mPATCH[0m [4;34m/auth/account[0m[34m/change/password[0m
+ INFO  rocket::launch                                                   > 📡 [35mFairings[0m:
+ INFO  rocket::launch_                                                  > [1;49;39mCORS[0m ([1;34mignite, request, response[0m)
+ INFO  rocket::launch_                                                  > [1;49;39mRatelimiter[0m ([1;34mrequest, response[0m)
+ INFO  rocket::launch_                                                  > [1;49;39mPrometheus metric collection[0m ([1;34mrequest, response[0m)
+ INFO  rocket::launch_                                                  > [1;49;39mShield[0m ([1;34mliftoff, response, singleton[0m)
+ INFO  rocket::shield::shield                                           > 🛡️ [35mShield[0m:
+ INFO  _                                                                > Permissions-Policy: [49;39minterest-cohort=()[0m
+ INFO  _                                                                > X-Content-Type-Options: [49;39mnosniff[0m
+ INFO  _                                                                > X-Frame-Options: [49;39mSAMEORIGIN[0m
+ INFO  rocket::launch                                                   > 🚀 [1;49;39mRocket has launched from[0m [1;4;49;39mhttp://0.0.0.0:8000[0m
+warning: Patch `redis v0.23.1 (https://github.com/revoltchat/redis-rs?rev=f8ca28ab85da59d2ccde526b4d2fb390eff5a5f9#f8ca28ab)` was not used in the crate graph.
+Check that the patched package version and available features are compatible
+with the dependency requirements. If the patch has a different version from
+what is locked in the Cargo.lock file, run `cargo update` to use the new
+version. This may also occur with an optional dependency that is not enabled.
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/channels.rs:284:5
+    |
+284 |     /// Options when deleting a channel
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(renamed_and_removed_lints)]` on by default
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/messages.rs:246:5
+    |
+246 |     /// Options for querying messages
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/messages.rs:323:5
+    |
+323 |     /// Options for removing reaction
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/core/models/src/v0/server_members.rs:99:5
+   |
+99 |     /// Options for fetching all members
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/servers.rs:197:5
+    |
+197 |     /// Options when fetching server
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+   --> crates/core/models/src/v0/servers.rs:283:5
+    |
+283 |     /// Options when leaving a server
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: lint `private_in_public` has been removed: replaced with another group of lints, see RFC <https://rust-lang.github.io/rfcs/2145-type-privacy.html> for more information
+  --> crates/core/models/src/v0/user_settings.rs:18:5
+   |
+18 |     /// Additional options for inserting settings
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `revolt-models` (lib) generated 7 warnings
+warning: unused import: `self::rocket::*`
+ --> crates/core/database/src/models/users/mod.rs:9:9
+  |
+9 | pub use self::rocket::*;
+  |         ^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `self::schema::*`
+  --> crates/core/database/src/models/users/mod.rs:11:9
+   |
+11 | pub use self::schema::*;
+   |         ^^^^^^^^^^^^^^^
+
+warning: `revolt-database` (lib) generated 2 warnings (run `cargo fix --lib -p revolt-database` to apply 2 suggestions)
+    Finished dev [unoptimized + debuginfo] target(s) in 0.18s
+     Running `target/debug/revolt-bonfire`
+ INFO  revolt_config > Starting revolt-bonfire@0.7.1
+ INFO  revolt_bonfire > Listening on host 0.0.0.0:9000
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63423
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63423
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63426
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63426
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63427
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63427
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63743
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63743
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63769
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63769
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63848
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63848
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63850
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63850
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63851
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63859
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63859
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63860
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63860
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63863
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63863
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63864
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63891
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63891
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63893
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63893
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63896
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63896
+ INFO  revolt_bonfire > User connected from 10.0.2.2:63897
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63897
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63864
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:63851
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64018
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64018
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64019
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64019
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64024
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64024
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64025
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64025
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64032
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64032
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64033
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64033
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64037
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64037
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64038
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64038
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64050
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64050
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64051
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64051
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64112
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64112
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64113
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64113
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64117
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64117
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64121
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64129
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64129
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64135
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64135
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64149
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64149
+ INFO  revolt_bonfire > User connected from 10.0.2.2:64160
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64160
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:64121
+ INFO  revolt_bonfire > User connected from 127.0.0.1:37322
+ INFO  revolt_bonfire > User disconnected from 127.0.0.1:37322
+ INFO  revolt_bonfire > User connected from 127.0.0.1:57898
+ INFO  revolt_bonfire > User disconnected from 127.0.0.1:57898
+ INFO  rocket::server                                                   > [32mGET[0m [34m/[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  revolt_bonfire > User connected from 127.0.0.1:55592
+ INFO  revolt_bonfire > User disconnected from 127.0.0.1:55592
+ INFO  rocket::server                                                   > [32mGET[0m [34m/[0m [33mtext[0m[33m/[0m[33mhtml[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/favicon.ico[0m [33mimage[0m[33m/[0m[33mavif[0m:
+ ERROR _                                                                > No matching routes for [32mGET[0m [34m/favicon.ico[0m [33mimage[0m[33m/[0m[33mavif[0m.
+ WARN  _                                                                > No [1;34m404[0m catcher registered. Using Rocket default.
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/onboard/hello[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/onboard/hello[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/onboard/hello[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mhello[0m[36m)[0m [32mGET[0m [4;34m/onboard[0m[34m/hello[0m
+ WARN  _                                                                > Request guard `Session` failed: InvalidSession.
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;31mFailure[0m
+ WARN  _                                                                > No [1;34m401[0m catcher registered. Using Rocket default.
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/auth/session/logout[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/auth/session/logout[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mPOST[0m [34m/auth/session/logout[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mlogout[0m[36m)[0m [32mPOST[0m [4;34m/auth/session[0m[34m/logout[0m
+ WARN  _                                                                > Request guard `Session` failed: InvalidSession.
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;31mFailure[0m
+ WARN  _                                                                > No [1;34m401[0m catcher registered. Using Rocket default.
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  revolt_bonfire > User connected from 127.0.0.1:60094
+ INFO  revolt_bonfire > User disconnected from 127.0.0.1:60094
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49822
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49822
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49825
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49825
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49829
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49829
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49831
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49831
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49832
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49832
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49834
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49834
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49839
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49839
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49841
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49841
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49842
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49842
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49846
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49846
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49849
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49849
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49850
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49850
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49853
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49853
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49857
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49857
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49859
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49859
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49860
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49860
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49863
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49863
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49867
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49867
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49869
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49869
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49870
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49870
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49875
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49875
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49878
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49878
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49879
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49879
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49881
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49881
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49886
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49886
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49888
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49888
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49890
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49890
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49893
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49893
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49898
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49898
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49902
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49902
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49904
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49904
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49907
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49907
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49912
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49912
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49915
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49915
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49917
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49917
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49922
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49922
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49927
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49927
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49929
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49929
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49931
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49931
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49936
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49936
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49941
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49941
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49945
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49945
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49949
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49949
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49954
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49954
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49959
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49959
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49963
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49963
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49969
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49969
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49975
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49975
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49978
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49978
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49981
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49981
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49987
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49987
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49992
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49992
+ INFO  revolt_bonfire > User connected from 10.0.2.2:49996
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:49996
+ INFO  revolt_bonfire > User connected from 10.0.2.2:50060
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:50060
+ INFO  revolt_bonfire > User connected from 10.0.2.2:50066
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:50066
+ INFO  revolt_bonfire > User connected from 10.0.2.2:50070
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:50070
+ INFO  revolt_bonfire > User connected from 10.0.2.2:50073
+ INFO  revolt_bonfire > User disconnected from 10.0.2.2:50073
+ INFO  rocket::server                                                   > [32mGET[0m [34m/[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/auth/account/create[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/auth/account/create[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mPOST[0m [34m/auth/account/create[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mcreate_account[0m[36m)[0m [32mPOST[0m [4;34m/auth/account[0m[34m/create[0m
+ INFO  revolt_database::events::client                                  > Publishing event to global: Auth(CreateAccount { account: Account { id: "01HW18H6S02NFMG5TJTECP61Z7", email: "aries.powvalla@gmail.com", email_normalised: "ariespowvalla@gmail.com", password: "$argon2i$v=19$m=4096,t=3,p=1$RGstVnFwRVVWMEtuTndVT25POVpCYkFv$H0VDh+Z2mPpwAnlWH7Hz+rsptQ8b2uqx900aXckheKc", disabled: false, verification: Verified, password_reset: None, deletion: None, lockout: None, mfa: MultiFactorAuthentication { totp_token: Disabled, recovery_codes: [] } } })
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/auth/session/login[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/auth/session/login[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mPOST[0m [34m/auth/session/login[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mlogin[0m[36m)[0m [32mPOST[0m [4;34m/auth/session[0m[34m/login[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  revolt_database::events::client                                  > Publishing event to global: Auth(CreateSession { session: Session { id: "01HW18MJDZ7FW1KJ0NPA3872MK", user_id: "01HW18H6S02NFMG5TJTECP61Z7", token: "VYi8pUoxCDR7g3BpwtK4DeRmL69H-btcAocZ8nhgQiVH_VD2ue9ZIY6IuwQT7J7a", name: "chrome on Windows 10", subscription: None } })
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/onboard/hello[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/onboard/hello[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/onboard/hello[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mhello[0m[36m)[0m [32mGET[0m [4;34m/onboard[0m[34m/hello[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/onboard/complete[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/onboard/complete[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mPOST[0m [34m/onboard/complete[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mcomplete[0m[36m)[0m [32mPOST[0m [4;34m/onboard[0m[34m/complete[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/onboard/hello[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/onboard/hello[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/onboard/hello[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mhello[0m[36m)[0m [32mGET[0m [4;34m/onboard[0m[34m/hello[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mroot[0m[36m)[0m [32mGET[0m [34m/[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/auth/session/login[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/auth/session/login[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mPOST[0m [34m/auth/session/login[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mlogin[0m[36m)[0m [32mPOST[0m [4;34m/auth/session[0m[34m/login[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  revolt_database::events::client                                  > Publishing event to global: Auth(CreateSession { session: Session { id: "01HW1FEDN4340X2JNTD44P1QZV", user_id: "01HW18H6S02NFMG5TJTECP61Z7", token: "_-biD3vdVjPyltAL5RkIZD2k_dd0KYEL4yiai7Y2MLQfdHTk1m-PkwN5eOLDhFmJ", name: "chrome on Windows 10", subscription: None } })
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mOPTIONS[0m [34m/onboard/hello[0m:
+ INFO  _                                                                > Matched: [32mOPTIONS[0m [34m/<catch_all_options_route..>[0m [[1;49;39m9223372036854775807[0m]
+ INFO  _                                                                > "Catch all" handling of CORS `OPTIONS` preflight for request [32mOPTIONS[0m [34m/onboard/hello[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/onboard/hello[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mhello[0m[36m)[0m [32mGET[0m [4;34m/onboard[0m[34m/hello[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
+ INFO  rocket::server                                                   > [32mGET[0m [34m/onboard/hello[0m [33mapplication[0m[33m/[0m[33mjson[0m:
+ INFO  _                                                                > Matched: [36m([0m[37mhello[0m[36m)[0m [32mGET[0m [4;34m/onboard[0m[34m/hello[0m
+ INFO  _                                                                > [1;49;39mOutcome:[0m [49;32mSuccess[0m
+ INFO  _                                                                > [32mResponse succeeded.[0m
